@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <!--自适应屏幕，初始不压缩改变-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息卡片</title>
+    <!--背景动图-->
+    <style type="text/css">
+        body{
+            background-image: url(preview.gif);
+            background-size: 1450px;
+            
+        }
+    </style>
+    <!--外联样式表-->
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>  
+        <div class="card">
+            <h2>个人信息卡片</h2>
+            <!--设置了默认头像-->
+            <img id="avatar" src="default1.jpeg" title="头像" alt="头像加载失败" width="200px">
+            <input type="file" id="avatarInput" style="display: none;">
+            <label for="avatarInput" style="text-align: center;" >上传头像</label>
+            <input type="text" id="name" placeholder="姓名">
+            <textarea id="bio" placeholder="个人简介"></textarea>
+            <button onclick="saveProfile()">保存</button>
+          </div>
+    <script src="script.js"></script>
+    </body>
+</html>
+
