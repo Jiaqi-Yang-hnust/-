@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;     
+}    
+h2{
+    text-align: center;
+    font-family:楷体;
+    color: #333333;
+}
+  .card {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/*设置垂直阴影，模糊距离，阴影颜色及不透明度*/
+    border-radius: 10px;  /*边框圆角，圆角半径10像素*/
+    background-color: #ffffff;
+  }
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display:block;
+    /*左右自适应达到居中的效果*/
+    margin-left: auto ;
+    margin-right: auto;
+  }
+  .card label{
+    display: block;
+    cursor: pointer
+  }
+  .card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;/*确保内边距和边框不会增加到元素的总宽度和高度上*/
+  }
+  .card textarea{
+    resize:none;/*确保边框不会任意改动*/
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .card input:hover, .card textarea:hover {
+    border-color: #888888;/*鼠标移动到内容上时，边框颜色加深*/
+  }
+  .card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;/*改变鼠标在按钮上的模样*/
+  }
+  .card button:hover {
+    background-color: #4cae9e;  /*当鼠标移到按钮上时颜色改变*/
+  }
